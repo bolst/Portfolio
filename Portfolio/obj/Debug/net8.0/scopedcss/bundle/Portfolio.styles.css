@@ -1,4 +1,5 @@
-﻿.demo-theme-color-item {
+/* _content/Portfolio/Components/Layout/ThemeColorSelector.razor.rz.scp.css */
+.demo-theme-color-item[b-6gybiu8yd9] {
     display: table-cell;
     width: 36px;
     height: 36px;
@@ -8,7 +9,7 @@
     cursor: pointer;
 }
 
-    .demo-theme-color-item .material-icons {
+    .demo-theme-color-item .material-icons[b-6gybiu8yd9] {
         display: flex;
         height: 100%;
         align-items: center;

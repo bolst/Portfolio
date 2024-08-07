@@ -3,67 +3,13 @@
 @inherits LayoutComponentBase
 
 
-@if ( layoutType == "fixed-header" )
-{
-    <Layout Sider>
-        <LayoutSider>
-            <LayoutSiderContent>
-                <SideMenu />
-            </LayoutSiderContent>
-        </LayoutSider>
-        <Layout>
-            <LayoutHeader Fixed>
-                <TopMenu ThemeEnabledChanged="@OnThemeEnabledChanged"
-                     ThemeGradientChanged="@OnThemeGradientChanged"
-                     ThemeRoundedChanged="@OnThemeRoundedChanged"
-                     ThemeColorChanged="@OnThemeColorChanged"
-                     @bind-LayoutType="@layoutType" />
-            </LayoutHeader>
-            <LayoutContent Padding="Padding.Is4.OnX.Is4.FromTop">
-                @Body
-            </LayoutContent>
-        </Layout>
-    </Layout>
-}
-else if ( layoutType == "fixed-header-footer-only" )
-{
+<Layout>
     <Layout>
         <LayoutHeader Fixed>
-            <TopMenu ThemeEnabledChanged="@OnThemeEnabledChanged"
-                 ThemeGradientChanged="@OnThemeGradientChanged"
-                 ThemeRoundedChanged="@OnThemeRoundedChanged"
-                 ThemeColorChanged="@OnThemeColorChanged"
-                 @bind-LayoutType="@layoutType" />
+            <TopMenu />
         </LayoutHeader>
-        <LayoutContent Padding="Padding.Is4.OnX.Is4.FromTop">
+        <LayoutContent Padding="Padding.Is4.OnY" Width="Width.Is75" Margin="Margin.IsAuto.OnX">
             @Body
         </LayoutContent>
-        <LayoutFooter Fixed>
-            <FooterMenu></FooterMenu>
-        </LayoutFooter>
     </Layout>
-}
-else if ( layoutType == "sider-with-header-on-top" )
-{
-    <Layout>
-        <LayoutHeader Fixed>
-            <TopMenu ThemeEnabledChanged="@OnThemeEnabledChanged"
-                 ThemeGradientChanged="@OnThemeGradientChanged"
-                 ThemeRoundedChanged="@OnThemeRoundedChanged"
-                 ThemeColorChanged="@OnThemeColorChanged"
-                 @bind-LayoutType="@layoutType" />
-        </LayoutHeader>
-        <Layout Sider>
-            <LayoutSider>
-                <LayoutSiderContent>
-                    <SideMenu />
-                </LayoutSiderContent>
-            </LayoutSider>
-            <Layout>
-                <LayoutContent Padding="Padding.Is4.OnX.Is4.FromTop">
-                    @Body
-                </LayoutContent>
-            </Layout>
-        </Layout>
-    </Layout>
-}
+</Layout>
