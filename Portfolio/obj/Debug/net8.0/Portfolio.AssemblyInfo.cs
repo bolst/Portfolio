@@ -13,11 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Megabit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright 2018-2024 Megabit")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("\n\t\t\tThis is a Blazorise Template for a Blazor Server Application.\n\t\t\tBlazorise is" +
-    " a component library built on top of Blazor and CSS frameworks like Bootstrap, F" +
-    "luentUI2, Tailwind, Bulma and Material.\n\t\t")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("\r\n\t\t\tThis is a Blazorise Template for a Blazor Server Application.\r\n\t\t\tBlazorise " +
+    "is a component library built on top of Blazor and CSS frameworks like Bootstrap," +
+    " FluentUI2, Tailwind, Bulma and Material.\r\n\t\t")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.6.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.6+1e2b7d636f443f9ccd1409dee51b28f36e09d606")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.6+49cf130ebdc225f3a675ba4c5af7ef7630b1a321")]
 [assembly: System.Reflection.AssemblyProductAttribute("Portfolio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Portfolio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.6.0.0")]
